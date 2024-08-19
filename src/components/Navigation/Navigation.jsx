@@ -31,7 +31,7 @@ function Navigation() {
               Nie wierz nam na słowo - sprawdź
             </p>
             <a href="#offer" className="offer-link header-offer">
-              oferta
+              Oferta
             </a>
           </section>
         </div>

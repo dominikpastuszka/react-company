@@ -1,0 +1,13 @@
+html {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 60px 0 60px 0;
+}

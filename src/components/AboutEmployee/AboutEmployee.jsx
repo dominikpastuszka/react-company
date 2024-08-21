@@ -1,3 +1,4 @@
+import React from "react";
 import "../AboutSection/AboutSection.css";
 
 function AboutEmployee({
@@ -9,7 +10,7 @@ function AboutEmployee({
   isReverse,
   alignRight,
 }) {
-  const photoClass = position === "Data Analyst" ? "photo" : "";
+  const photoClass = position.toLowerCase().replace(/\s+/g, "-");
 
   const aboutClass = isReverse ? "about-container reverse" : "about-container";
   const textClass = alignRight ? "centered reversetext" : "centered";
@@ -17,15 +18,11 @@ function AboutEmployee({
   return (
     <div className={aboutClass}>
       <div
-        className={`personal-photo ${position
-          .toLowerCase()
-          .replace(/\s+/g, "-")} ${photoClass}`}
+        className={`personal-photo ${photoClass}`}
         style={{ backgroundImage: `url(${photo})` }}
       ></div>
       <div className={textClass}>
-        <span
-          className={`subtitle about-subtitle ${alignRight ? "reverse" : ""}`}
-        >
+        <span className={`subtitle about-subtitle ${alignRight ? "reverse" : ""}`}>
           {firstName} {lastName} [{position}]
         </span>
         <p>{description}</p>

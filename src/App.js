@@ -1,4 +1,5 @@
 import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import AboutSection from "./components/AboutSection/AboutSection";
 import OfferSection from "./components/OfferSection/OfferSection";
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <Navigation />
+      <Header />
       <main>
         <AboutSection employees={employees} />
         <OfferSection offers={offers} />
